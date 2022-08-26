@@ -48,6 +48,24 @@ ul{
     margin-bottom: 10px;          
 }
 
+.frete {    
+    display: flex;
+    background-color:#C2185B;
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    color: #FFFFFF;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.frete > h2 {
+    font: normal 600 16px 'Open Sans';
+    text-align: center;
+}
 
 /* MAIN */
 
@@ -59,7 +77,7 @@ article {
     display: inline-block;
     width: 600px;
     height: 300px;   
-    margin: 10px 30px 10px 30px;
+    margin: 30px 30px 10px 30px;
 }
 
 .lorem {
@@ -102,6 +120,16 @@ form button {
     border: none;
     text-transform: uppercase;
     border-radius: 20px;
+    transition-property: background-color, color;
+    transition-duration: 3S ;
+    
+}
+
+button:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    color:#C2185B;
+    font-weight: bold;
 }
 
 
@@ -155,8 +183,7 @@ a.link2:hover{
 
 .link {
     grid-template-columns: auto;
-    float: left;
-    
+    float: left;    
 }
 
 
